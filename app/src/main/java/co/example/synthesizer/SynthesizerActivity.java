@@ -94,6 +94,7 @@ public class SynthesizerActivity extends AppCompatActivity implements View.OnCli
         //key is the button ID, the value is the noteID
         noteMap.put(R.id.button_synth_a, noteA);
         noteMap.put(R.id.button_synth_b, noteB);
+        noteMap.put(R.id.button_synth_bb,noteBb);
         noteMap.put(R.id.button_synth_c, noteC);
         noteMap.put(R.id.button_synth_cs, noteCs);
         noteMap.put(R.id.button_synth_d, noteD);
@@ -379,7 +380,37 @@ public class SynthesizerActivity extends AppCompatActivity implements View.OnCli
         soundPool.play(noteA, DEFAULT_VOLUME, DEFAULT_VOLUME, DEFAULT_PRIORITY,
                 loop, DEFAULT_RATE);
     }
-
+    private void playNote(int noteB, int loop) {
+        soundPool.play(noteB, DEFAULT_VOLUME, DEFAULT_VOLUME, DEFAULT_PRIORITY,
+                loop, DEFAULT_RATE);
+    }
+    private void playNote(int noteBb, int loop) {
+        soundPool.play(noteBb, DEFAULT_VOLUME, DEFAULT_VOLUME, DEFAULT_PRIORITY,
+                loop, DEFAULT_RATE);
+    }
+    private void playNote(int noteC, int loop) {
+        soundPool.play(noteC, DEFAULT_VOLUME, DEFAULT_VOLUME, DEFAULT_PRIORITY,
+                loop, DEFAULT_RATE);
+    }
+    private void playNote(int noteCs, int loop) {
+        soundPool.play(noteCs, DEFAULT_VOLUME, DEFAULT_VOLUME, DEFAULT_PRIORITY,
+                loop, DEFAULT_RATE);
+    }
+   private void playNote(int noteD, int loop){
+       soundPool.play(noteD, DEFAULT_VOLUME, DEFAULT_VOLUME,DEFAULT_PRIORITY,loop, DEFAULT_RATE);
+    }
+    private void playNote(int noteDs, int loop) {
+        soundPool.play(noteDs, DEFAULT_VOLUME, DEFAULT_VOLUME, DEFAULT_PRIORITY,
+                loop, DEFAULT_RATE);
+    }
+     private void playNote(int noteE, int loop) {
+        soundPool.play(noteE, DEFAULT_VOLUME, DEFAULT_VOLUME, DEFAULT_PRIORITY,
+                loop, DEFAULT_RATE);
+    }
+     private void playNote(int noteF, int loop) {
+        soundPool.play(noteF, DEFAULT_VOLUME, DEFAULT_VOLUME, DEFAULT_PRIORITY,
+                loop, DEFAULT_RATE);
+    }
     private void playNote(int note) {
         playNote(note, 0);
     }
